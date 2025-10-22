@@ -1,0 +1,96 @@
+.check-card {
+  background: #ffffff;
+  border-radius: 24px;
+  padding: 2rem;
+  box-shadow: 0 16px 50px rgba(15, 41, 141, 0.1);
+  width: 100%;
+  max-width: 560px;
+}
+
+.check-card header h2 {
+  margin: 0 0 0.5rem;
+  font-size: 1.5rem;
+  color: #0f172a;
+}
+
+.check-card header p {
+  margin: 0;
+  color: #475569;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.check-form {
+  margin-top: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.check-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.check-form span {
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.check-form input {
+  border-radius: 14px;
+  border: 1px solid rgba(15, 23, 42, 0.12);
+  padding: 0.75rem 1rem;
+  font-size: 0.95rem;
+}
+
+.check-form button {
+  border: none;
+  border-radius: 999px;
+  background: #2e5bff;
+  color: #ffffff;
+  padding: 0.75rem 1.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  align-self: flex-start;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.check-form button:disabled {
+  opacity: 0.6;
+  cursor: progress;
+}
+
+.check-form button:not(:disabled):hover {
+  transform: translateY(-1px);
+  box-shadow: 0 12px 30px rgba(46, 91, 255, 0.25);
+}
+
+.notice {
+  margin-top: 1.25rem;
+  padding: 1rem 1.25rem;
+  border-radius: 16px;
+  font-size: 0.9rem;
+}
+
+.notice.success {
+  background: rgba(16, 185, 129, 0.12);
+  color: #047857;
+}
+
+.notice.error {
+  background: rgba(239, 68, 68, 0.12);
+  color: #b91c1c;
+}
+
+@media (max-width: 768px) {
+  .check-card {
+    padding: 1.5rem;
+  }
+
+  .check-form button {
+    width: 100%;
+    text-align: center;
+  }
+}

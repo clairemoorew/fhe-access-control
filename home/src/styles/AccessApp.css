@@ -1,0 +1,69 @@
+.access-app {
+  width: 100%;
+}
+
+.access-content {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 4rem;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.tab-nav {
+  background: rgba(46, 91, 255, 0.08);
+  padding: 0.5rem;
+  border-radius: 999px;
+  display: inline-flex;
+  gap: 0.5rem;
+}
+
+.tab-button {
+  border: none;
+  padding: 0.65rem 1.4rem;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.tab-button.active {
+  background: #2e5bff;
+  color: #ffffff;
+  box-shadow: 0 8px 20px rgba(46, 91, 255, 0.25);
+}
+
+.tab-button.inactive {
+  background: transparent;
+  color: #2e5bff;
+}
+
+.tab-button.inactive:hover {
+  background: rgba(46, 91, 255, 0.15);
+}
+
+.tab-panel {
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .access-content {
+    padding: 1.5rem 1rem 3rem;
+  }
+
+  .tab-nav {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .tab-button {
+    width: 100%;
+    border-radius: 12px;
+  }
+}

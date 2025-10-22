@@ -3,7 +3,7 @@ const resolvedAddress = (import.meta.env.VITE_CONTRACT_ADDRESS as `0x${string}` 
   | undefined;
 
 export const CONTRACT_ADDRESS: `0x${string}` =
-  resolvedAddress ?? '0x0000000000000000000000000000000000000000';
+  resolvedAddress ?? '0x5Cf01f112cba405CbEE799F2a8a1C25Ac026B743';
 
 export const CONTRACT_ABI = [
   {
